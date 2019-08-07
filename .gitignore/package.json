@@ -1,0 +1,18 @@
+{
+  "name": "kabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kabes",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "fs": "0.0.1-security",
+    "lowdb": "^1.0.0",
+    "opusscript": "0.0.6",
+    "youtube-audio-stream": "^0.3.0"
+  }
+}
