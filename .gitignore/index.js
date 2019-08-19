@@ -55,13 +55,7 @@ const db = low(adapters);
  //fin xp
 
 
-//bye
-bot.on('guildMemberRemove', function (member) {
-  let embed = new Discord.RichEmbed()
-      .setDescription(':cry: **' + member.user.username + '** a quitté ' + member.guild.name)
-      .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-  member.guild.channels.get('608615465576693762').send(embed)
-})
+
 
 
 bot.on("message", function (message) {
@@ -251,14 +245,7 @@ bot.on('message', function (message) {
        message.channel.send('**' + member.user.username + '** a été banni :white_check_mark:')
     }
 })
-//bienvenue
-bot.on('guildMemberAdd', function (member) {
-  let embed = new Discord.RichEmbed()
-      .setDescription(':tada: **' + member.user.username + '** a rejoint ' + member.guild.name)
-      .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-  member.guild.channels.get('607156424858140672').send(embed)
-  member.addRole('607648621084540933')
-})
+
 
 bot.on('ready', function() {
   bot.user.setPresence({game: { name: 'Commandes : K!help'}});
